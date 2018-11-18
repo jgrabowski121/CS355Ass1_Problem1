@@ -40,8 +40,9 @@ class Problem1 {
     * Creates two two-dimentional arrays of
     *  size (100 X 100) on the heap and does not
     *  deallocate them
-    */
+    
    void function4();
+    */
    
 public:
 

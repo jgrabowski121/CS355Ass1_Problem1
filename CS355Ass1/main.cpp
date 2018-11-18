@@ -44,7 +44,7 @@ int main(int argc, const char * argv[]) {
     //Create executionTimeTester object
    executionTimeTester timeTest;
    unsigned ITERATION = 100000;
-   
+   /*
    timeTest.setStartClock();
    for(size_t i = 0; i <= ITERATION; i++)
    {
@@ -106,26 +106,25 @@ int main(int argc, const char * argv[]) {
                << " ms\n\n";
    
    //-----------------
-   
-   static unsigned long long iterations = 0;
-   while(true)
+   */
+   unsigned long long iterations = 0;
+   try
    {
-      try
+      while(iterations++ <= 100000)
       {
          function4();
-         iterations++;
-         if((iterations % 100000) == 0)
+         if((iterations % 1000) == 0)
          {
-         std::cout << "Iterations : " << iterations << std::endl;
+         std::cout << "Iterations: " << iterations << std::endl;
          }
       }
-      catch (std::bad_alloc&)
-      {
-          std::cout << "Crashed after : " << iterations << std::endl;
-         break;
-      }
-      
    }
+   catch (std::bad_alloc)
+   {
+      std::cout << "Crashed after :" << iterations << std::endl;
+   }
+      
+   
    
    return 0;
 }
@@ -156,12 +155,14 @@ void function3()
 
 void function4()
 {
-   char arraySize = 100;
+   short arraySize = 100;
+   
    int** arrayOne = new int*[arraySize];
    for(size_t i = 0; i < arraySize; i++)
    {
       arrayOne[i] =  new int [arraySize];
    }
+   
    int** arrayTwo = new int*[arraySize];
    for(size_t i = 0; i < arraySize; i++)
    {

@@ -33,9 +33,7 @@ void Problem1::function3(){
    
 }
 
-void Problem1::function4(){
-   
-}
+
 
 void Problem1::runTest()
 {
