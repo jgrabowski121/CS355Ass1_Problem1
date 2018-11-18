@@ -106,7 +106,7 @@ int main(int argc, const char * argv[]) {
                << " ms\n\n";
    
    //-----------------
-   /*
+   
    static unsigned long long iterations = 0;
    while(true)
    {
@@ -126,7 +126,7 @@ int main(int argc, const char * argv[]) {
       }
       
    }
-   */
+   
    return 0;
 }
 
@@ -158,5 +158,13 @@ void function4()
 {
    char arraySize = 100;
    int** arrayOne = new int*[arraySize];
+   for(size_t i = 0; i < arraySize; i++)
+   {
+      arrayOne[i] =  new int [arraySize];
+   }
    int** arrayTwo = new int*[arraySize];
+   for(size_t i = 0; i < arraySize; i++)
+   {
+      arrayTwo[i] =  new int [arraySize];
+   }
 }
