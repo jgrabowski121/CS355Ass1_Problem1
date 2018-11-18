@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FDD64112219CAAB20044BC1B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDD64111219CAAB20044BC1B /* main.cpp */; };
+		FDD6411A219CB2960044BC1B /* timeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDD64119219CB2960044BC1B /* timeTest.cpp */; };
+		FDD64120219E262C0044BC1B /* problem1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDD6411E219E262C0044BC1B /* problem1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,11 @@
 
 /* Begin PBXFileReference section */
 		FDD6410E219CAAB20044BC1B /* CS355Ass1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CS355Ass1; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDD64111219CAAB20044BC1B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FDD64111219CAAB20044BC1B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		FDD64118219CB0F60044BC1B /* timeTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = timeTest.h; sourceTree = "<group>"; };
+		FDD64119219CB2960044BC1B /* timeTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = timeTest.cpp; sourceTree = "<group>"; };
+		FDD6411E219E262C0044BC1B /* problem1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = problem1.cpp; sourceTree = "<group>"; };
+		FDD6411F219E262C0044BC1B /* problem1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = problem1.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +50,9 @@
 				FDD64110219CAAB20044BC1B /* CS355Ass1 */,
 				FDD6410F219CAAB20044BC1B /* Products */,
 			);
+			indentWidth = 3;
 			sourceTree = "<group>";
+			tabWidth = 3;
 		};
 		FDD6410F219CAAB20044BC1B /* Products */ = {
 			isa = PBXGroup;
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				FDD64111219CAAB20044BC1B /* main.cpp */,
+				FDD6411E219E262C0044BC1B /* problem1.cpp */,
+				FDD6411F219E262C0044BC1B /* problem1.hpp */,
+				FDD64118219CB0F60044BC1B /* timeTest.h */,
+				FDD64119219CB2960044BC1B /* timeTest.cpp */,
 			);
 			path = CS355Ass1;
 			sourceTree = "<group>";
@@ -118,6 +130,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD64120219E262C0044BC1B /* problem1.cpp in Sources */,
+				FDD6411A219CB2960044BC1B /* timeTest.cpp in Sources */,
 				FDD64112219CAAB20044BC1B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
