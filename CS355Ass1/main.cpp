@@ -9,7 +9,7 @@
 #include <iostream>
 #include "timeTest.h"
 #include <exception>
-
+#include <iomanip>
 #include <chrono>
 
 //Function declarations
@@ -40,11 +40,11 @@ void function3();
 */
 void function4();
 
-int main(int argc, const char * argv[]) {
+int main(void) {
     //Create executionTimeTester object
    executionTimeTester timeTest;
    unsigned ITERATION = 100000;
-   /*
+   
    timeTest.setStartClock();
    for(size_t i = 0; i <= ITERATION; i++)
    {
@@ -53,15 +53,16 @@ int main(int argc, const char * argv[]) {
    timeTest.setEndClock();
    
    std::cout << "Time to execute function1 "
-               <<  ITERATION
-               << " iterations: "
-               << std::fixed
-               << (timeTest.getTimeDiferenceSeconds()*1000)
-               << " ms\n";
+				<< ITERATION
+				<< " iterations: "
+				<< std::fixed
+				<< std::setprecision(9)
+				<< (timeTest.getTimeDiferenceSeconds()*1000)
+				<< " ms\n";
    
    std::cout << "Time to execute function1 1 iteration: "
                << std::scientific
-               << (timeTest.getTimeDiferenceSeconds()/100000) * 1000
+               << (timeTest.getTimeDiferenceSeconds()/ITERATION) * 1000
                << " ms\n\n";
    
    //---------------
@@ -106,7 +107,7 @@ int main(int argc, const char * argv[]) {
                << " ms\n\n";
    
    //-----------------
-   */
+   /*
    unsigned long long iterations = 0;
    try
    {
@@ -119,14 +120,13 @@ int main(int argc, const char * argv[]) {
          }
       }
    }
-   catch (std::bad_alloc)
+   catch (std::bad_alloc&)
    {
       std::cout << "Crashed after :" << iterations << std::endl;
    }
-      
+   */ 
    
-   
-   return 0;
+  system("pause");
 }
 
 
