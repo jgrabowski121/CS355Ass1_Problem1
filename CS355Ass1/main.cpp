@@ -6,7 +6,10 @@
 // Instructor Ganchev G.
 // main.cpp
 // CS355Ass1_Problem1
+// Language C++
 //
+// Purpose: This file tests the time used for the creation
+// of arrays in C+
 
 #include <iostream>
 #include "timeTest.h"
