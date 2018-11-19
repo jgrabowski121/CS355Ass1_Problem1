@@ -1,9 +1,11 @@
 //
-//  main.cpp
-//  CS355Ass1
-//
-//  Created by Justin Grabowski on 11/14/18.
-//  Copyright © 2018 Justin Grabowski. All rights reserved.
+// Justin Grabowski
+// CS355
+// Fall 2018
+// November 9th 2018
+// Instructor Ganchev G.
+// main.cpp
+// CS355Ass1_Problem1
 //
 
 #include <iostream>
@@ -107,7 +109,7 @@ int main(void) {
                << " ms\n\n";
    
    //-----------------
-   /*
+   /* Uncomment this block to text heap overflow
    unsigned long long iterations = 0;
    try
    {
@@ -124,9 +126,7 @@ int main(void) {
    {
       std::cout << "Crashed after :" << iterations << std::endl;
    }
-   */ 
-   
-  system("pause");
+   */
 }
 
 
