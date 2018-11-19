@@ -82,7 +82,7 @@ int main(void) {
    
    std::cout << "Time to execute function2 1 iteration: "
                << std::scientific
-               << (timeTest.getTimeDiferenceSeconds()/100000) * 1000
+               << (timeTest.getTimeDiferenceSeconds()/ITERATION) * 1000
                << " ms\n\n";
    
    //----------------
@@ -103,7 +103,7 @@ int main(void) {
    
    std::cout << "Time to execute function3 1 iteration: "
                << std::scientific
-               << (timeTest.getTimeDiferenceSeconds()/100000) * 1000
+               << (timeTest.getTimeDiferenceSeconds()/ITERATION) * 1000
                << " ms\n\n";
    
    //-----------------
